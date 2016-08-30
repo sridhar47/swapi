@@ -7,5 +7,15 @@
 
 module.exports = {
 	
+	signup: function(req, res){
+		var doc = req.body;
+		User.signup(doc, function(err, response){
+			if(!err){
+				res.json(response)
+			}else{
+				console.log(err)
+			}
+		});
+	}
 };
 

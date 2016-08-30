@@ -44,6 +44,8 @@ module.exports.routes = {
   '/planet/:planetId': 'PlanetsController.getDetails',
   '/people/:peopleId': 'PeopleController.getDetails',
 
+  '/user/signup': 'UserController.signup',
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
